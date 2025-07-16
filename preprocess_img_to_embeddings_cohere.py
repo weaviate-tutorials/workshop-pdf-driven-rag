@@ -6,7 +6,7 @@ import cohere
 import base64
 
 img_dir = Path("data/imgs")
-pdf_img_paths = sorted(list(img_dir.glob("manual_bosch_*.png")))
+pdf_img_paths = sorted(list(img_dir.glob("manual_bosch_*.jpg")))
 pdf_img_paths = pdf_img_paths
 batch_size = 4
 MODEL_NAME = "embed-v4.0"
@@ -30,7 +30,7 @@ for i in range(0, len(pdf_img_paths), batch_size):
             "content": [
                 {
                     "type": "image_url",
-                    "image_url": {"url": f"data:image/png;base64,{img_b64}"}
+                    "image_url": {"url": f"data:image/jpeg;base64,{img_b64}"}
                 }
             ]
         }
