@@ -22,7 +22,8 @@ def convert_pdf_to_images(src_file_path: Path, img_path: Path) -> list[Path]:
     return img_paths
 
 
-pdf_path = Path("data/pdfs/manual_bosch_WGG254Z0GR.pdf")
+# pdf_path = Path("data/pdfs/manual_bosch_WGG254Z0GR.pdf")
+pdf_path = Path("data/pdfs/howto-free-threading-python.pdf")
 img_dir = Path("data/imgs")
 
 convert_pdf_to_images(pdf_path, img_dir)
