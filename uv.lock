@@ -1741,6 +1741,19 @@ wheels = [
 ]
 
 [[package]]
+name = "jphtools"
+version = "0.1.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "click" },
+    { name = "jupyter" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/3c/e6/b70438c2e1973843611bcddeaeb5d2fafdd445fb49ca6fe0e603c4c8a770/jphtools-0.1.0.tar.gz", hash = "sha256:1bb65e74d6dcc2e159b06f9239810f408e2a7fa661db3fbe317922914d65ada4", size = 67247 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/fe/6b/b0f4767c7a9e56dc8cfaf14ce7c6148bd8dac5523a4c51af06d4f18a5297/jphtools-0.1.0-py3-none-any.whl", hash = "sha256:953f3a79de2d77f12ac805f03854f9935350e9cd085a202fd0a56eb410efeb5c", size = 2690 },
+]
+
+[[package]]
 name = "json5"
 version = "0.12.0"
 source = { registry = "https://pypi.org/simple" }
@@ -5802,6 +5815,11 @@ dependencies = [
     { name = "weaviate-client" },
 ]
 
+[package.dev-dependencies]
+dev = [
+    { name = "jphtools" },
+]
+
 [package.metadata]
 requires-dist = [
     { name = "accelerate", specifier = ">=1.8.1" },
@@ -5815,6 +5833,9 @@ requires-dist = [
     { name = "python-dotenv", specifier = ">=1.1.1" },
     { name = "weaviate-client", specifier = ">=4.16.0" },
 ]
+
+[package.metadata.requires-dev]
+dev = [{ name = "jphtools", specifier = ">=0.1.0" }]
 
 [[package]]
 name = "xlsxwriter"

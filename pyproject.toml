@@ -16,3 +16,8 @@ dependencies = [
     "python-dotenv>=1.1.1",
     "weaviate-client>=4.16.0",
 ]
+
+[dependency-groups]
+dev = [
+    "jphtools>=0.1.0",
+]
