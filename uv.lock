@@ -5798,6 +5798,7 @@ dependencies = [
     { name = "numpy", version = "2.2.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.11'" },
     { name = "numpy", version = "2.3.1", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.11'" },
     { name = "pdf2image" },
+    { name = "python-dotenv" },
     { name = "weaviate-client" },
 ]
 
@@ -5811,6 +5812,7 @@ requires-dist = [
     { name = "jupyter", specifier = ">=1.1.1" },
     { name = "numpy", specifier = ">=2.2.6" },
     { name = "pdf2image", specifier = ">=1.17.0" },
+    { name = "python-dotenv", specifier = ">=1.1.1" },
     { name = "weaviate-client", specifier = ">=4.16.0" },
 ]
 
