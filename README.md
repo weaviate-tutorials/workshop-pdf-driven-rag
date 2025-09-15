@@ -12,7 +12,11 @@ The workshop is organized as a series of Jupyter notebooks.
 
 The notebooks are numbered, so you can follow them along in order.
 
-**Requirements:** Python 3.10+, Weaviate, Cohere/Anthropic API keys (for embeddings and LLMs).
+### Requirements
+
+- Python 3.10+
+- Cohere/Anthropic API keys (for embeddings and LLMs).
+    - In the live session, the instructor may provide temporary keys.
 
 ## Setup instructions
 
