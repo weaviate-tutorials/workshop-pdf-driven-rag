@@ -6,7 +6,13 @@ import cohere
 import base64
 
 img_dir = Path("data/imgs")
-pdf_img_paths = sorted(list(img_dir.glob("manual_bosch_*.jpg")))
+# pdf_img_paths = sorted(list(img_dir.glob("*bosch_*.jpg")))
+# embeddings_filename = "bosch_image_embeddings.npy"
+# metadata_filename = "bosch_embeddings_metadata.json"
+pdf_img_paths = sorted(list(img_dir.glob("*hai_*.jpg")))
+embeddings_filename = "hai_image_embeddings.npy"
+metadata_filename = "hai_embeddings_metadata.json"
+
 pdf_img_paths = pdf_img_paths
 batch_size = 4
 MODEL_NAME = "embed-v4.0"
@@ -57,7 +63,7 @@ output_dir = Path("data/embeddings")
 output_dir.mkdir(exist_ok=True)
 
 # Save embeddings as numpy array
-np.save(output_dir / "image_embeddings.npy", embeddings_array)
+np.save(output_dir / embeddings_filename, embeddings_array)
 
 # Save metadata as JSON
 metadata = {
@@ -66,7 +72,7 @@ metadata = {
     "model_name": f"{MODEL_PROVIDER}/{MODEL_NAME}",
     "num_images": len(image_paths)
 }
-with open(output_dir / "embeddings_metadata.json", "w") as f:
+with open(output_dir / metadata_filename, "w") as f:
     json.dump(metadata, f, indent=2)
 
 print(f"Saved {len(image_embeddings)} embeddings with shape {embeddings_array.shape}")
