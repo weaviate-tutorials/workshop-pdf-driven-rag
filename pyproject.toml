@@ -11,6 +11,7 @@ dependencies = [
     "cohere>=5.16.1",
     "docling>=2.41.0",
     "jupyter>=1.1.1",
+    "jupyterlab>=4.4.4",
     "numpy>=2.2.6",
     "pdf2image>=1.17.0",
     "python-dotenv>=1.1.1",

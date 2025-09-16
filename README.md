@@ -57,14 +57,19 @@ cp .env.example .env
 
 ### Set up your Python environment
 
-- Set up your preferred Python environment
-    - e.g. Set up a virtual environment (optional but recommended):
+- Set up your Python environment
+    - e.g. with `venv` & `pip`:
     ```bash
     python3 -m venv .venv
     source .venv/bin/activate  # On Windows use `.venv\Scripts\activate.bat`
     pip install -r requirements.txt
     ```
-    - Or use `uv`, `conda`, or any other environment manager you prefer.
+    - Or with `uv`:
+    ```bash
+    uv sync
+    source .venv/bin/activate
+    ```
+    - Or use any other tool you prefer
 
 ## Workshop notebooks
 
