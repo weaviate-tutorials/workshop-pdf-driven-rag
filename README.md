@@ -88,9 +88,9 @@ You can run the notebooks using Jupyter/JupyterLab or VSCode.
 
 - Using JupyterLab:
     - Activate the Python environment where you installed the dependencies
-    - Start JupyterLab:
+    - Start JupyterLab (with hidden files visible):
     ```bash
-    jupyter lab
+    jupyter lab --ContentsManager.allow_hidden=True
     ```
     - Open the notebook file you want to run
 
