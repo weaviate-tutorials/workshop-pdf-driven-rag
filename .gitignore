@@ -1,6 +1,5 @@
 # Project-specific files
 data/imgs
-data/parsed
 .env.throwaways
 
 # Byte-compiled / optimized / DLL files
