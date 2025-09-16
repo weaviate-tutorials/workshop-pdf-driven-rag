@@ -14,43 +14,67 @@ You’ll learn how to:
 - Anthropic API key (for Generative AI use).
     - In the live session, the instructor may provide temporary keys.
 
+> [!IMPORTANT]
+> **🚀 WORKSHOP SETUP - COMPLETE BEFORE STARTING**
+>
+> <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 20px; border-radius: 10px; color: white; margin: 15px 0;">
+> <h3 style="margin: 0 0 15px 0; color: white;">🔧 Required Setup Steps</h3>
+> <p style="color: white; margin-bottom: 15px;">You must complete ALL these steps before running the workshop notebooks!</p>
+>
+> <div style="background: rgba(255,255,255,0.1); padding: 15px; border-radius: 8px; margin-bottom: 10px;">
+> <strong style="color: #FFE4B5;">Setup Checklist:</strong><br/>
+> ☐ Repository cloned and configured<br/>
+> ☐ Environment file (.env) created<br/>
+> ☐ API keys added to .env file<br/>
+> ☐ Python environment set up<br/>
+> ☐ Dependencies installed<br/>
+> </div>
+> </div>
+
 ## Setup instructions
 
-### Repository setup
+### 1. Repository setup
 
-- Clone this repository
+**Clone this repository:**
 
 ```bash
 git clone git@github.com:weaviate-tutorials/workshop-pdf-driven-rag.git
 cd workshop-pdf-driven-rag
 ```
 
-- Copy the `.env.example` to `.env`
+**Copy the `.env.example` to `.env`:**
 
 ```bash
 cp .env.example .env
 ```
 
-### AI model provider API keys
+### 2. AI model provider API keys
 
-- Fill in the `ANTHROPIC_API_KEY` & `COHERE_API_KEY` with actual value.
-    - In the live session, the instructor may provide temporary keys.
+**Fill in the API keys in your `.env` file:**
+- Add your `ANTHROPIC_API_KEY`
+- Add your `COHERE_API_KEY`
 
-### Set up your Python environment
+> [!NOTE]
+> In the live session, the instructor may provide temporary keys.
 
-- Set up your Python environment
-    - e.g. with `venv` & `pip`:
-    ```bash
-    python3 -m venv .venv
-    source .venv/bin/activate  # On Windows use `.venv\Scripts\activate.bat`
-    pip install -r requirements.txt
-    ```
-    - Or with `uv`:
-    ```bash
-    uv sync
-    source .venv/bin/activate
-    ```
-    - Or use any other tool you prefer
+### 3. Set up your Python environment
+
+**Choose one of these methods:**
+
+**Option A: Using `venv` & `pip`:**
+```bash
+python3 -m venv .venv
+source .venv/bin/activate  # On Windows use `.venv\Scripts\activate.bat`
+pip install -r requirements.txt
+```
+
+**Option B: Using `uv`:**
+```bash
+uv sync
+source .venv/bin/activate
+```
+
+**Option C: Use any other tool you prefer**
 
 ## Workshop notebooks
 
