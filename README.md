@@ -110,3 +110,32 @@ There are some helper scripts:
 - `preprocess_pdf_to_img.py`: Convert PDF pages to images
 - `preprocess_pdf_to_md.py`: Convert PDF to markdown text
 - `preprocess_img_to_embeddings_cohere.py`: Pre-generate image embeddings & object data with Cohere embeddings
+
+---
+
+## 🎉 Next Steps
+
+Congratulations on completing the workshop! Ready to take your RAG skills to the next level?
+
+### 📚 Continue Learning
+
+**Free Resources:**
+- 🎓 **[Weaviate Academy](https://weaviate.io/developers/academy)** - Free courses on vector databases, RAG, and AI applications
+- 📖 **[Documentation](https://weaviate.io/developers/weaviate)** - Complete guides, tutorials, and API references
+- 🎙️ **[Workshops](https://weaviate.io/community/events)** - Live workshops and events
+
+**Upcoming Workshops:**
+- **[Oct 2: Intro to building AI-native applications with Weaviate](https://luma.com/ws-2025-10-02?utm_source=rag_notebook)**
+- **[Oct 7: Building Intelligent Chatbots with Pydantic AI and Weaviate](https://luma.com/ws-2025-10-07?utm_source=rag_notebook)**
+- More workshops listed on our [events page](https://weaviate.io/community/events)
+
+### 🌟 Join the Community
+
+Connect with other developers and get help:
+- 💬 **[Slack Community](https://weaviate.io/slack)** - Meet & share projects
+- 💻 **[Forum](https://forum.weaviate.io/)** - Ask questions & get support
+- 📧 **[Newsletter](https://newsletter.weaviate.io)** - Latest AI & vector database news
+
+---
+
+*Thank you for building with Weaviate! Happy vector searching!* ✨
