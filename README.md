@@ -11,7 +11,7 @@ You’ll learn how to:
 ### Requirements
 
 - Python 3.10+
-- Cohere/Anthropic API keys (for embeddings and LLMs).
+- Anthropic API key (for Generative AI use).
     - In the live session, the instructor may provide temporary keys.
 
 ## Setup instructions
@@ -23,6 +23,12 @@ You’ll learn how to:
 ```bash
 git clone git@github.com:weaviate-tutorials/workshop-pdf-driven-rag.git
 cd workshop-pdf-driven-rag
+```
+
+- Copy the `.env.example` to `.env`
+
+```bash
+cp .env.example .env
 ```
 
 ### Weaviate Cloud setup
@@ -70,3 +76,20 @@ The workshop is organized as a series of numbered Jupyter notebooks.
 
 > [!TIP]
 > There are also completed version of each notebook, with `-completed` suffix. If you get stuck, you can refer to these.
+
+### Running the notebooks
+
+You can run the notebooks using Jupyter/JupyterLab or VSCode.
+
+- Using JupyterLab:
+    - Activate the Python environment where you installed the dependencies
+    - Start JupyterLab:
+    ```bash
+    jupyter lab
+    ```
+    - Open the notebook file you want to run
+
+- Using VSCode:
+    - Open the repository folder in VSCode
+    - Open the notebook file you want to run
+    - Make sure to select the correct Python interpreter (the one where you installed the dependencies)
