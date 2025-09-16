@@ -31,28 +31,9 @@ cd workshop-pdf-driven-rag
 cp .env.example .env
 ```
 
-### Weaviate Cloud setup
-
-- Create a Weaviate Cloud account
-    - Go to https://console.weaviate.cloud
-    - Create a free account
-- Create a cluster
-    - Choose default options (free "Sandbox" cluster)
-    - Give it a name (e.g. "pdf-workshop")
-    - Click "Create" on bottom right
-- Copy the `REST Endpoint` and add to `.env`
-    - Like `WEAVIATE_URL=somestring.europe-west3.gcp.weaviate.cloud`
-- Scroll down to "API Keys" section
-    - When the buttons are ready, click `Create API key`
-    - Give it a name (e.g. admin)
-    - Select `Admin` role
-    - Click `Create` on bottom right
-    - Copy the generated API key and add to `.env`
-        - Like `WEAVIATE_API_KEY=some-long-string`
-
 ### AI model provider API keys
 
-- Fill in the `ANTHROPIC_API_KEY` with actual value.
+- Fill in the `ANTHROPIC_API_KEY` & `COHERE_API_KEY` with actual value.
     - In the live session, the instructor may provide temporary keys.
 
 ### Set up your Python environment
@@ -98,3 +79,10 @@ You can run the notebooks using Jupyter/JupyterLab or VSCode.
     - Open the repository folder in VSCode
     - Open the notebook file you want to run
     - Make sure to select the correct Python interpreter (the one where you installed the dependencies)
+
+## Helper scripts
+
+There are some helper scripts:
+- `preprocess_pdf_to_img.py`: Convert PDF pages to images
+- `preprocess_pdf_to_md.py`: Convert PDF to markdown text
+- `preprocess_img_to_embeddings_cohere.py`: Pre-generate image embeddings & object data with Cohere embeddings

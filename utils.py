@@ -5,11 +5,15 @@ def connect_to_weaviate() -> WeaviateClient:
     import weaviate
     import os
 
-    WEAVIATE_URL = os.getenv("WEAVIATE_URL")
-    WEAVIATE_API_KEY = os.getenv("WEAVIATE_API_KEY")
-    client = weaviate.connect_to_weaviate_cloud(
-        cluster_url=WEAVIATE_URL,
-        auth_credentials=WEAVIATE_API_KEY,
-        headers={"X-Anthropic-Api-Key": os.getenv("ANTHROPIC_API_KEY")}
+    client = weaviate.connect_to_embedded(
+        version="1.32.5",
+        headers={
+            "X-Anthropic-Api-Key": os.getenv("ANTHROPIC_API_KEY"),
+            "X-Cohere-Api-Key": os.getenv("COHERE_API_KEY")
+        },
+        environment_variables={
+            "LOG_LEVEL": "error",                   # Reduce amount of logs
+            "ENABLE_API_BASED_MODULES": "true",     # Enable API-based modules like multi2vec-cohere
+        }
     )
     return client
