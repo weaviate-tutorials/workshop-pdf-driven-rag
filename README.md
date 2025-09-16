@@ -35,17 +35,16 @@ cd workshop-pdf-driven-rag
     - Give it a name (e.g. "pdf-workshop")
     - Click "Create" on bottom right
 - Copy the `REST Endpoint` and add to `.env`
+    - Like `WEAVIATE_URL=somestring.europe-west3.gcp.weaviate.cloud`
 - Scroll down to "API Keys" section
     - When the buttons are ready, click `Create API key`
     - Give it a name (e.g. admin)
     - Select `Admin` role
     - Click `Create` on bottom right
     - Copy the generated API key and add to `.env`
+        - Like `WEAVIATE_API_KEY=some-long-string`
 
 ### AI model provider API keys
-
-> [!NOTE]
-> You ONLY need to do this if you do not have `ANTHROPIC_API_KEY` set in your environment.
 
 - Fill in the `ANTHROPIC_API_KEY` with actual value.
     - In the live session, the instructor may provide temporary keys.
